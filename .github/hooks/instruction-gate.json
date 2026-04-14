@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/hook_visualizer.sh SessionStart",
+        "timeout": 3
+      },
+      {
+        "type": "command",
+        "command": "bash .github/hooks/instruction_gate.sh SessionStart",
+        "timeout": 5
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/hook_visualizer.sh UserPromptSubmit",
+        "timeout": 3
+      },
+      {
+        "type": "command",
+        "command": "bash .github/hooks/instruction_gate.sh UserPromptSubmit",
+        "timeout": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/hook_visualizer.sh PreToolUse",
+        "timeout": 3
+      },
+      {
+        "type": "command",
+        "command": "bash .github/hooks/instruction_gate.sh PreToolUse",
+        "timeout": 5
+      }
+    ]
+  }
+}

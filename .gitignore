@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+
+.obsidian/
+.vscode/
+**/.venv/
+
+密码.md
+github-recovery-codes-2FA 恢复码.txt
